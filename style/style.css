@@ -1,0 +1,113 @@
+*{
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(210, 218, 201);
+}
+
+.btn_to_top{
+    position: fixed;
+    border-radius: 7px;
+    padding: 10px 30px;
+    bottom: 20px;
+    right: 10px;
+    background-color: rgba(151, 230, 151, 0.3);
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    border: 1.5px solid #292929;
+    transition: .2s;
+}
+
+.btn_to_top:hover{
+    transform: scale(1.1);
+}
+
+.main_menu{
+    background-color: rgb(253, 239, 107, 0.4);
+    width: 25%;
+    padding: 5px 0 5px 10px;
+    border-radius: 10px;
+}
+
+kbd{
+    background-color: #29292928;
+}
+
+a{
+    text-decoration: none;
+    color: #292929;
+    transition: .2s;
+}
+
+nav a:hover{
+    font-size: 110%;
+}
+
+h1{
+    font-size: 24px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+p, div{
+    font-size: 16px;
+}
+
+header{
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+main{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.prew{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.pr1Naviki{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.new1{
+    background: url("../img/2.jpeg") center;
+    background-size: cover;
+}
+
+.new2{
+    background: url("../img/3.jpeg") center;
+    background-size: cover;
+}
+
+.new3{
+    background: url("../img/4.jpeg") center;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    background-color: rgb(253, 239, 107, 0.4);
+    padding: 30px;
+}
+
+nav a{
+    color: rgb(18, 65, 13);
+}

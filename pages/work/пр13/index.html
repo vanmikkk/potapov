@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style/style.css">
+    <style>
+        .container{
+            margin: 100px 0 0 100px;
+        }
+        a{
+            display: block;
+            transition: .1s;
+            margin-bottom: 5px;
+            width: 75px;
+        }
+        a::after{
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: #000;
+            display: block;
+            opacity: 0;
+            transition: .2s;
+        }
+        a:hover::after{
+           opacity: 1;
+        }
+        .var{
+            width: 82px;
+        }
+    </style>
+    <title>пр 13</title>
+</head>
+<body>
+    <div class="container">
+        <a href="./задачи/1 television/television.html">задание 1</a>
+        <a href="./задачи/2 pyramids/pyramids.html">задание 2</a>
+        <a href="./задачи/3 target/target.html">задание 3</a>
+        <a href="./задачи/4 smile/smile.html">задание 4</a>
+        <a href="./задачи/5 arifmetika/arifmetika.html">задание 5</a>
+        <a href="./задачи/6 ballon/ballon.html">задание 6</a>
+        <a class="var" href="./задачи/index.html">вариант 11</a>
+    </div>
+</body>
+</html>

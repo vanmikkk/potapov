@@ -1,0 +1,512 @@
+@font-face {
+    font-family: 'Myriad';
+    font-style: italic;
+    font-weight: 800;
+    src: url(./шрифт/MYRIADPRO-BOLDIT.OTF);
+}
+
+@font-face {
+    font-family: 'MyriadB';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./шрифт/MYRIADPRO-BOLD.OTF);
+}
+
+@font-face {
+    font-family: 'MyriadN';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./шрифт/MYRIADPRO-SEMIBOLD.OTF);
+}
+
+@font-face {
+    font-family: 'MyriadNI';
+    font-style: italic;
+    font-weight: 400;
+    src: url(./шрифт/MYRIADPRO-SEMIBOLDIT.OTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Myriad', sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.container2{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.container3{
+    margin: 0 auto;
+    width: 78%;
+}
+
+.container4{
+    margin: 0 auto;
+    width: 75%;
+}
+
+/*-------------bg-------------*/
+
+.bg_all{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.bg1{
+    height: 100vh;
+    width: 33%;
+    z-index: 1;
+}
+
+.bg_abs_block{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bg2{
+    transform: translateX(-45%);
+    height: 100vh;
+    width: 33%;
+
+    z-index: 2;
+
+}
+
+.bg3{
+    
+    height: 100vh;
+    width: 45%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bg3 img{
+    transform:translateX(-44%) translateY(-5%);
+}
+
+/*-------------header-------------*/
+
+header{
+    width: 100%;
+    z-index: 3;
+}
+
+.navigation{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link{
+    display: block;
+    font-family: 'Myriad', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: .2s ease-in;
+}
+
+.nav_link::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: #f1ac11;
+    transition: .2s ease-in;
+}
+
+.nav_link:hover::after{
+    width: 100%;
+}
+
+.nav_link:hover{
+    color: #f1ac11;
+}
+
+/*-------------main-------------*/
+
+main{
+    width: 100%;
+    margin: 15% 0 20% 0;
+    
+}
+
+.main_block{
+    background: url("./obvod.png") center no-repeat;
+    background-size: cover;
+    width: 380px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main_block h1{
+    width: 60%;
+    text-align: center;
+    color: #000;
+    font-family: "MyriadB";
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.main_block a{
+    font-family: "MyriadN";
+    text-decoration: none;
+    color: #000;
+    background: #f1ac11;
+    padding: 5px 12px;
+    transition: .2s;
+    text-transform: uppercase;
+}
+
+.main_block a:hover{
+    transform: scale(1.1);
+}
+
+.vanish:hover{
+    opacity: 1;
+}
+
+main .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vanish{
+    opacity: 0.5;
+    transition: .2s;
+}
+
+.vishe{
+    transform: translateY(-30%);
+}
+
+/*-------------daily_menu-------------*/
+
+.daily_menu{
+    width: 100%;
+    
+}
+
+.daily_menu h1{
+    text-transform: uppercase;
+    color: #f1ac11;
+}
+
+.menu_block_center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.six_cotegories{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 100px 100px 100px;
+    gap: 30px;
+
+}
+
+.menu_inner{
+    width: 100%;
+    
+    
+}
+
+.show_vegan{
+    display: flex;
+    width: 200px;
+    align-items: center;
+}
+
+.show_vegan img{
+    width: 12px;
+    height: 12px;
+}
+
+.one_cotegory{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.title{
+    
+}
+
+.price{
+    display: flex;
+}
+
+.price_deng{
+    background: url("./minifon.png") center no-repeat;
+    background-size: cover;
+    width: 44px;
+    height: 27px;
+    text-align: center;
+}
+
+.price_cena{
+    transform: translateY(3px);
+}
+
+/*-------------best_dish-------------*/
+
+.best_dish{
+    width: 100%;
+    margin: 50px 0;
+}
+
+.best_dish_two_elem{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.best_dish_vse{
+    background: url("./bg3.png") center no-repeat;
+    background-size: contain;
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.best_dish_text{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.best_dish_text h3{
+    color: #f1ac11;
+    font-weight: normal;
+    font-family: 'MyriadNI';
+    text-transform: uppercase;
+}
+
+.best_dish_text h2{
+    text-transform: uppercase;
+}
+
+.best_dish_text a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    background: #f1ac11;
+    width: 110px;
+    transition: .2s;
+}
+
+.best_dish_text a:hover{
+    transform: scale(1.1);
+}
+
+.best_dish_text p{
+    color: #666666;
+}
+
+.next_order{
+    width: 82px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.next_order:hover{
+    transform: scale(1.1);
+}
+
+.strelochka{
+    content: "";
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-top: #666666 solid 2px;
+    border-right: #666666 solid 2px; 
+    transform: rotate(45deg);
+}
+
+.op0{
+    opacity: 0;
+    margin-left: -20px;
+}
+
+/*-------------foot_menu-------------*/
+
+.foot_menu{
+    width: 100%;
+    background: url("./bgfoot.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show_on_map{
+    background: url("./obvod.png") no-repeat center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 480px;
+    width: 500px;
+    gap: 20px;
+}
+
+.show_on_map h3{
+    text-transform: uppercase;
+}
+
+.logo_plus_text{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.show_on_map a{
+    text-decoration: none;
+    color: #000;
+    background: #f1ac11;
+    padding: 7px 10px;
+    border-bottom: #b47d00 solid 2px;
+    transition: .2s;
+}
+
+.show_on_map a:hover{
+    transform: scale(1.1);
+}
+
+/*-------------footer-------------*/
+
+footer{
+    background: url("./footer.png");
+    width: 100%;
+    height: 260px;
+    display: flex; 
+
+    align-items: center;
+}
+
+.footer_inner{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.footer_text{
+    display: block;
+}
+
+.footer_text a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: "MyriadNI";
+    font-weight: 400;
+    display: block;
+}
+
+.footer_text h3{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Myriad";
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sing_up h3{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Myriad";
+    display: block;
+}
+
+.sing_up h3{
+    margin-bottom: 10px;
+}
+
+.back{
+    display: flex;
+    gap: 20px;
+}
+
+.back a{
+    text-decoration: none;
+    color: #000;
+    background: #f1ac11;
+    padding: 7px 10px;
+    border-bottom: #b47d00 solid 2px;
+    transition: .2s;
+}
+
+.back a:hover{
+    transform: scale(1.1);
+}
+
+.back input{
+    padding: 10px 20px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+.line li{
+    display: inline-block;
+    background: #f08686;
+    padding: 5px;
+}
+
+.links a{
+    text-decoration: none;
+    background: #4e1dfc;
+    color: #fff;
+    display: block;
+    width: 150px;
+    padding: 3px 5px;
+    margin-bottom: 3px;
+}
+
+.blocks{
+    margin: 40px 0;
+}
+
+.blocks div{
+    display: inline;
+    background: red;
+    padding: 10px 15px;
+    margin-right: 15px;
+}
+
+.non{
+    display: none !important; 
+}
+
+.links-markers{
+    background: #000;
+    width: 150px;
+}
+
+.links-markers a{
+    display: list-item;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/*6 пункт*/
+
+
+.post1, .post2{
+    background: #930303;
+}
+
+.post1 div, .post2 div, .post1 h2, .post2 h2{
+    color: #fff;
+}
+
+.image{
+    background: url('weather-sun.jpg');
+    width: 100px;
+    height: 100px;
+    
+}
+
+.post1 .image{
+    float: left;
+    margin-right: 30px;
+}
+
+.post2 .image{
+    float: right;
+
+}
+
+/**/
+
+.zad7{
+    display: flex;
+    gap: 10px;
+}
+
+.zad7_1, .zad7_2, .zad7_3{
+    width: 150px;
+
+}
+
+
+.zad7_1 .img{
+    background: url('weather-sun.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+.zad7_2 .img{
+    background: url('weather-snow.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+.zad7_3 .img{
+    background: url('weather-blizzard.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+.zad7 h1{
+    background: #3db4aa;
+    text-align: center;
+    padding: 2px 0;
+    color: #fff;
+}
+
+.zad7 h2{
+    text-align: center;
+}
